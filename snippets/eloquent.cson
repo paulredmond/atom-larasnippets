@@ -1,0 +1,40 @@
+'.source.php':
+
+    # Has one
+    '"Has One" Relationship':
+        'prefix': 'hasone'
+        'body': """
+            public function $1()
+            {
+                return $this->hasOne($2::class)
+            }
+        """
+
+    # Has many
+    '"Has Many" Relationship':
+        'prefix': 'hasmany'
+        'body': """
+            public function $1()
+            {
+                return $this->hasMany($2::class)
+            }
+        """
+
+    # Belongs To
+    '"Belongs To" Relationship':
+        'prefix': 'belongsto'
+        'body': """
+            public function $1()
+            {
+                return $this->belongsTo($2::class)
+            }
+        """
+    # Has and Belongs to Many
+    '"Belongs To Many" Relationship':
+        'prefix': 'btm'
+        'body': """
+            public function $1()
+            {
+                return $this->belongsToMany($2::class)
+            }
+        """
