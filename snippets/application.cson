@@ -9,6 +9,15 @@
             });
         """
 
+    # Define a service in the application
+    'Service container binding':
+        'prefix': 'bind'
+        'body': """
+            $this->app->bind($1, function ($app) {
+                $2
+            });
+        """
+
     # Define an alias
     'Define an alias for a service':
         'prefix': 'alias'
