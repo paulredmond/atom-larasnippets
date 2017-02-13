@@ -1,0 +1,11 @@
+# Controller
+'.source.php':
+
+    # Validation
+    'Validation in the controller':
+        'prefix': 'validate'
+        'body': """
+            $this->validate(request(), [
+                $1
+            ]);
+        """
