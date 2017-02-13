@@ -1,0 +1,15 @@
+{
+  "name": "larasnippets",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Laravel snippets + php snippets",
+  "keywords": [
+    "snippets",
+    "laravel"
+  ],
+  "repository": "https://github.com/paulredmond/atom-larasnippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

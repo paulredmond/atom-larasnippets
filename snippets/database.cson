@@ -1,0 +1,24 @@
+# Migrations and Factories
+'.source.php':
+
+    # Define a factory
+    'Laravel Factory Definition':
+        'prefix': 'factory'
+        'body': """
+            $factory->define(App\\\\$1::class, function (Faker\\\\Generator $faker) {
+                return [
+                    $2
+                ];
+            });
+        """
+
+    # Define a factory state
+    'Laravel Factory State Definition':
+        'prefix': 'factory:state'
+        'body': """
+            $factory->state(App\\\\$1::class, '${2:state}', function (Faker\\\\Generator $faker) {
+                return [
+                    $3
+                ];
+            });
+        """

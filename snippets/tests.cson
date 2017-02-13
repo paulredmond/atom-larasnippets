@@ -1,0 +1,22 @@
+'.source.php':
+    'Laravel Test Case':
+        'prefix': 'testcase2'
+        'body': """
+            use Illuminate\\\\Foundation\\\\Testing\\\\WithoutMiddleware;
+            use Illuminate\\\\Foundation\\\\Testing\\\\DatabaseMigrations;
+            use Illuminate\\\\Foundation\\\\Testing\\\\DatabaseTransactions;
+
+            class $1Test extends TestCase
+            {
+                $2
+            }
+        """
+    'PHP Unit Test':
+        'prefix': 'test'
+        'body': """
+            /** @test */
+            function $1()
+            {
+                $2
+            }
+        """

@@ -1,0 +1,12 @@
+'.source.php':
+    # Quick array key/value pairs
+    'Key/Value Pairs':
+        'prefix': 'kv'
+        'body': """
+        '$1' => ${2:'$3'},$0
+        """
+
+    # This keyword
+    'The $this Keyword':
+        'prefix': 'this'
+        'body': '\$this'
