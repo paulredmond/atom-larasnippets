@@ -4,7 +4,7 @@
     <img width="100" height="69" src="./laravel-l-slant.png" />
 </p>
 
-My collection of Laravel and PHP Snippets. My goal is not an exhaustive list of snippets that nobody would remember, but to provide the snippets I find most useful.
+My collection of Laravel and PHP Snippets. The goal of this package isn't an exhaustive list of snippets, but simply the snippets I reach for and need most often.
 
 <p align="center">
     <img src="./screenshot.gif" alt="The factory snippet in action" />
