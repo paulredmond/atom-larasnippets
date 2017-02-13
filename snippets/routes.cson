@@ -1,0 +1,20 @@
+# Routes
+'.source.php':
+
+    # Master route snippet
+    'Route':
+        'prefix': 'route'
+        'body': """
+            Route::$1('$2', '$3Controller@$4');
+        """
+
+    # Group
+    'Route Group':
+        'prefix': 'route:group'
+        'body': """
+            Route::group([
+                $1
+            ], function () {
+                $2
+            });
+        """
