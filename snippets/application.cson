@@ -1,0 +1,17 @@
+'.source.php':
+
+    # Define a service in the application
+    'Define a singleton service':
+        'prefix': 'singleton'
+        'body': """
+            $this->app->singleton($1, function ($app) {
+                $2
+            });
+        """
+
+    # Define an alias
+    'Define an alias for a service':
+        'prefix': 'alias'
+        'body': """
+            $this->app->alias('${1:abstract}', '${2:alias}');
+        """
