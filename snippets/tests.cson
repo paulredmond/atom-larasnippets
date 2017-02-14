@@ -1,6 +1,6 @@
 '.source.php':
     'Laravel Test Case':
-        'prefix': 'testcase2'
+        'prefix': 'testcase'
         'body': """
             use Illuminate\\\\Foundation\\\\Testing\\\\WithoutMiddleware;
             use Illuminate\\\\Foundation\\\\Testing\\\\DatabaseMigrations;
