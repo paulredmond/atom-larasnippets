@@ -3,7 +3,7 @@
 npm run docs \
 && npm version minor \
 && git push --tags origin master \
-&& apm publish -t $(cat package.json \
+&& apm publish --tag v$(cat package.json \
   | grep version \
   | head -1 \
   | awk -F: '{ print $2 }' \
