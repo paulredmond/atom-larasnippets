@@ -3,8 +3,10 @@
 npm run docs \
 && npm version minor \
 && git push --tags origin master \
-&& apm publish --tag v$(cat package.json \
+&& VERSION=$(cat package.json \
   | grep version \
   | head -1 \
   | awk -F: '{ print $2 }' \
-  | sed 's/[",]//g')
+  | sed 's/[",]//g') \
+&& echo "Publishing version $VERSION" \
+&& apm publish --tag "v$VERSION"
