@@ -2,6 +2,7 @@
 
 npm run docs \
 && npm version minor \
+&& git push origin master \
 && apm publish -t $(cat package.json \
   | grep version \
   | head -1 \
