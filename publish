@@ -2,7 +2,7 @@
 
 npm run docs \
 && npm version minor \
-&& apm publish $(cat package.json \
+&& apm publish -t $(cat package.json \
   | grep version \
   | head -1 \
   | awk -F: '{ print $2 }' \
