@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
+TYPE=${1:-minor}
+
 npm run docs \
-&& npm version minor \
+&& npm version $TYPE \
 && git push --tags origin master \
 && VERSION=$(cat package.json \
   | grep version \
