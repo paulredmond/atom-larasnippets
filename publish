@@ -7,6 +7,6 @@ npm run docs \
   | grep version \
   | head -1 \
   | awk -F: '{ print $2 }' \
-  | sed 's/[",]//g') \
-&& echo "Publishing version $VERSION" \
+  | sed 's/[", ]//g') \
+&& echo "Publishing version v$VERSION" \
 && apm publish --tag "v$VERSION"
