@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
 
-npm run docs
-npm version minor
-
-PACKAGE_VERSION=$(cat package.json \
+npm run docs \
+&& npm version minor \
+&& apm publish $(cat package.json \
   | grep version \
   | head -1 \
   | awk -F: '{ print $2 }' \
   | sed 's/[",]//g')
-
-apm publish $PACKAGE_VERSION
