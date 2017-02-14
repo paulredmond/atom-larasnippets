@@ -12,7 +12,7 @@ File: [application.cson](../snippets/application.cson)
 
 Shortcut: `singleton` + <kbd>tab</kbd>
 
-```
+```php
 $this->app->singleton($1, function ($app) {
     $2
 });
@@ -27,7 +27,7 @@ File: [application.cson](../snippets/application.cson)
 
 Shortcut: `bind` + <kbd>tab</kbd>
 
-```
+```php
 $this->app->bind($1, function ($app) {
     $2
 });
@@ -42,7 +42,7 @@ File: [application.cson](../snippets/application.cson)
 
 Shortcut: `alias` + <kbd>tab</kbd>
 
-```
+```php
 $this->app->alias('${1:abstract}', '${2:alias}');
 ```
 
@@ -55,7 +55,7 @@ File: [controller.cson](../snippets/controller.cson)
 
 Shortcut: `validate` + <kbd>tab</kbd>
 
-```
+```php
 $this->validate(request(), [
     $1
 ]);
@@ -70,7 +70,7 @@ File: [controller.cson](../snippets/controller.cson)
 
 Shortcut: `rjson` + <kbd>tab</kbd>
 
-```
+```php
 response()->json($1);
 ```
 
@@ -83,7 +83,7 @@ File: [controller.cson](../snippets/controller.cson)
 
 Shortcut: `vieww` + <kbd>tab</kbd>
 
-```
+```php
 view('$1')${2:->with([$3])};
 ```
 
@@ -96,7 +96,7 @@ File: [controller.cson](../snippets/controller.cson)
 
 Shortcut: `view` + <kbd>tab</kbd>
 
-```
+```php
 view('$1', [$2]);
 ```
 
@@ -109,7 +109,7 @@ File: [database.cson](../snippets/database.cson)
 
 Shortcut: `factory` + <kbd>tab</kbd>
 
-```
+```php
 $factory->define(App\$1::class, function (Faker\Generator $faker) {
     return [
         $2
@@ -126,7 +126,7 @@ File: [database.cson](../snippets/database.cson)
 
 Shortcut: `factory:state` + <kbd>tab</kbd>
 
-```
+```php
 $factory->state(App\$1::class, '${2:state}', function (Faker\Generator $faker) {
     return [
         $3
@@ -143,7 +143,7 @@ File: [eloquent.cson](../snippets/eloquent.cson)
 
 Shortcut: `hasone` + <kbd>tab</kbd>
 
-```
+```php
 public function $1()
 {
     return $this->hasOne($2::class);
@@ -159,7 +159,7 @@ File: [eloquent.cson](../snippets/eloquent.cson)
 
 Shortcut: `hasmany` + <kbd>tab</kbd>
 
-```
+```php
 public function $1()
 {
     return $this->hasMany($2::class);
@@ -175,7 +175,7 @@ File: [eloquent.cson](../snippets/eloquent.cson)
 
 Shortcut: `belongsto` + <kbd>tab</kbd>
 
-```
+```php
 public function $1()
 {
     return $this->belongsTo($2::class);
@@ -191,7 +191,7 @@ File: [eloquent.cson](../snippets/eloquent.cson)
 
 Shortcut: `btm` + <kbd>tab</kbd>
 
-```
+```php
 public function $1()
 {
     return $this->belongsToMany($2::class);
@@ -207,7 +207,7 @@ File: [eloquent.cson](../snippets/eloquent.cson)
 
 Shortcut: `hasmanythrough` + <kbd>tab</kbd>
 
-```
+```php
 public function $1()
 {
     return $this->hasManyThrough($2::class, $3::class);
@@ -223,7 +223,7 @@ File: [eloquent.cson](../snippets/eloquent.cson)
 
 Shortcut: `morphto` + <kbd>tab</kbd>
 
-```
+```php
 public function $1()
 {
     return $this->morphTo();
@@ -239,7 +239,7 @@ File: [eloquent.cson](../snippets/eloquent.cson)
 
 Shortcut: `morph` + <kbd>tab</kbd>
 
-```
+```php
 public function $1()
 {
     return $this->morphMany($2::class, '${3:commentable}');
@@ -255,7 +255,7 @@ File: [eloquent.cson](../snippets/eloquent.cson)
 
 Shortcut: `morphmany` + <kbd>tab</kbd>
 
-```
+```php
 public function $1()
 {
     return $this->morphMany($2::class, '${3:commentable}');
@@ -271,7 +271,7 @@ File: [fun.cson](../snippets/fun.cson)
 
 Shortcut: `laravel:logo` + <kbd>tab</kbd>
 
-```
+```php
 :/:::::::+.
 .+-      `+:
  .+-      `//`
@@ -296,7 +296,7 @@ File: [php.cson](../snippets/php.cson)
 
 Shortcut: `kv` + <kbd>tab</kbd>
 
-```
+```php
 '$1' => ${2:'$3'},$0
 ```
 
@@ -309,7 +309,7 @@ File: [php.cson](../snippets/php.cson)
 
 Shortcut: `this` + <kbd>tab</kbd>
 
-```
+```php
 $this
 ```
 
@@ -322,7 +322,7 @@ File: [php.cson](../snippets/php.cson)
 
 Shortcut: `/` + <kbd>tab</kbd>
 
-```
+```php
 /**
  * $1
  */
@@ -337,7 +337,7 @@ File: [php.cson](../snippets/php.cson)
 
 Shortcut: `/**` + <kbd>tab</kbd>
 
-```
+```php
 /**
  * $1
  */
@@ -352,7 +352,7 @@ File: [routes.cson](../snippets/routes.cson)
 
 Shortcut: `route` + <kbd>tab</kbd>
 
-```
+```php
 Route::$1('$2', '$3Controller@$4');
 ```
 
@@ -365,7 +365,7 @@ File: [routes.cson](../snippets/routes.cson)
 
 Shortcut: `route:group` + <kbd>tab</kbd>
 
-```
+```php
 Route::group([
     $1
 ], function () {
@@ -382,7 +382,7 @@ File: [tests.cson](../snippets/tests.cson)
 
 Shortcut: `testcase2` + <kbd>tab</kbd>
 
-```
+```php
 use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
@@ -402,7 +402,7 @@ File: [tests.cson](../snippets/tests.cson)
 
 Shortcut: `test` + <kbd>tab</kbd>
 
-```
+```php
 /** @test */
 function $1()
 {
