@@ -12,6 +12,14 @@ My collection of Laravel and PHP Snippets. The goal of this package isn't an exh
     <img src="https://cloud.githubusercontent.com/assets/177773/22904349/5c3b8046-f1f9-11e6-8476-c9514e761ab7.gif" alt="The factory snippet in action" />
 </p>
 
+## Documentation
+
+View the [Snippet Reference](./doc/snippet-reference.markdown) Markdown document for a full list of snippets. You can generate the latest version of the snippet reference documentation with:
+
+```console
+npm run docs
+```
+
 ## External References
 
 * [Laravel Official Documentation](https://laravel.com/docs)

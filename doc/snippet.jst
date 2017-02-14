@@ -1,0 +1,21 @@
+# Snippet Reference
+
+This file is generated from the source `snippets/*.cson` files.
+
+<% _.forEach(snippets, function(snippet) { %>
+### <%- snippet.title %>
+
+File: [<%= snippet.fileName %>](../snippets/<%= snippet.fileName %>)
+
+Tab completion: `<%- snippet.prefix %>` + tab
+
+Source Code:
+
+```<%- snippet.type %>
+<%= snippet.getFormattedCode() %>
+```
+<% }); %>
+
+<hr />
+
+To regenerate this document run: `node docs.js`.

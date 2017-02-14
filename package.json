@@ -7,9 +7,17 @@
     "laravel",
     "php"
   ],
+  "scripts": {
+    "docs": "node docs.js"
+  },
   "repository": "https://github.com/paulredmond/atom-larasnippets",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "devDependencies": {
+    "cson": "^4.0.0",
+    "glob": "^7.1.1",
+    "lodash": "^4.17.4"
   }
 }
