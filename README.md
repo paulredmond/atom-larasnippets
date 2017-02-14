@@ -24,3 +24,5 @@ npm run docs
 
 * [Laravel Official Documentation](https://laravel.com/docs)
 * [Atom Snippets Documentation](http://flight-manual.atom.io/using-atom/sections/snippets/)
+* My blog post about [creating the larasnippets plugin](http://bitpress.io/php/laravel/2017/02/13/larasnippets-atom-plugin/)
+* My blog post about [generating snippet markdown documentation](http://bitpress.io/php/laravel/2017/02/14/atom-cson-snippet-documentation-generator/) for this project
