@@ -380,7 +380,7 @@ Route::group([
 
 File: [tests.cson](../snippets/tests.cson)
 
-Shortcut: `testcase2` + <kbd>tab</kbd>
+Shortcut: `testcase` + <kbd>tab</kbd>
 
 ```php
 use Illuminate\Foundation\Testing\WithoutMiddleware;
