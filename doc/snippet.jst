@@ -3,13 +3,14 @@
 This file is generated from the source `snippets/*.cson` files.
 
 <% _.forEach(snippets, function(snippet) { %>
+
+<hr />
+
 ### <%- snippet.title %>
 
 File: [<%= snippet.fileName %>](../snippets/<%= snippet.fileName %>)
 
-Tab completion: `<%- snippet.prefix %>` + tab
-
-Source Code:
+Shortcut: `<%- snippet.prefix %>` + <kbd>tab</kbd>
 
 ```<%- snippet.type %>
 <%= snippet.getFormattedCode() %>

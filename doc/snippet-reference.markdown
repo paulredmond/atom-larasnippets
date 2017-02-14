@@ -3,13 +3,14 @@
 This file is generated from the source `snippets/*.cson` files.
 
 
+
+<hr />
+
 ### Define a singleton service
 
 File: [application.cson](../snippets/application.cson)
 
-Tab completion: `singleton` + tab
-
-Source Code:
+Shortcut: `singleton` + <kbd>tab</kbd>
 
 ```
 $this->app->singleton($1, function ($app) {
@@ -17,13 +18,14 @@ $this->app->singleton($1, function ($app) {
 });
 ```
 
+
+<hr />
+
 ### Service container binding
 
 File: [application.cson](../snippets/application.cson)
 
-Tab completion: `bind` + tab
-
-Source Code:
+Shortcut: `bind` + <kbd>tab</kbd>
 
 ```
 $this->app->bind($1, function ($app) {
@@ -31,25 +33,27 @@ $this->app->bind($1, function ($app) {
 });
 ```
 
+
+<hr />
+
 ### Define an alias for a service
 
 File: [application.cson](../snippets/application.cson)
 
-Tab completion: `alias` + tab
-
-Source Code:
+Shortcut: `alias` + <kbd>tab</kbd>
 
 ```
 $this->app->alias('${1:abstract}', '${2:alias}');
 ```
 
+
+<hr />
+
 ### Validation in the controller
 
 File: [controller.cson](../snippets/controller.cson)
 
-Tab completion: `validate` + tab
-
-Source Code:
+Shortcut: `validate` + <kbd>tab</kbd>
 
 ```
 $this->validate(request(), [
@@ -57,49 +61,53 @@ $this->validate(request(), [
 ]);
 ```
 
+
+<hr />
+
 ### Json Response
 
 File: [controller.cson](../snippets/controller.cson)
 
-Tab completion: `rjson` + tab
-
-Source Code:
+Shortcut: `rjson` + <kbd>tab</kbd>
 
 ```
 response()->json($1);
 ```
 
+
+<hr />
+
 ### View With
 
 File: [controller.cson](../snippets/controller.cson)
 
-Tab completion: `vieww` + tab
-
-Source Code:
+Shortcut: `vieww` + <kbd>tab</kbd>
 
 ```
 view('$1')${2:->with([$3])};
 ```
 
+
+<hr />
+
 ### View
 
 File: [controller.cson](../snippets/controller.cson)
 
-Tab completion: `view` + tab
-
-Source Code:
+Shortcut: `view` + <kbd>tab</kbd>
 
 ```
 view('$1', [$2]);
 ```
 
+
+<hr />
+
 ### Laravel Factory Definition
 
 File: [database.cson](../snippets/database.cson)
 
-Tab completion: `factory` + tab
-
-Source Code:
+Shortcut: `factory` + <kbd>tab</kbd>
 
 ```
 $factory->define(App\$1::class, function (Faker\Generator $faker) {
@@ -109,13 +117,14 @@ $factory->define(App\$1::class, function (Faker\Generator $faker) {
 });
 ```
 
+
+<hr />
+
 ### Laravel Factory State Definition
 
 File: [database.cson](../snippets/database.cson)
 
-Tab completion: `factory:state` + tab
-
-Source Code:
+Shortcut: `factory:state` + <kbd>tab</kbd>
 
 ```
 $factory->state(App\$1::class, '${2:state}', function (Faker\Generator $faker) {
@@ -125,13 +134,14 @@ $factory->state(App\$1::class, '${2:state}', function (Faker\Generator $faker) {
 });
 ```
 
+
+<hr />
+
 ### &quot;Has One&quot; Relationship
 
 File: [eloquent.cson](../snippets/eloquent.cson)
 
-Tab completion: `hasone` + tab
-
-Source Code:
+Shortcut: `hasone` + <kbd>tab</kbd>
 
 ```
 public function $1()
@@ -140,13 +150,14 @@ public function $1()
 }
 ```
 
+
+<hr />
+
 ### &quot;Has Many&quot; Relationship
 
 File: [eloquent.cson](../snippets/eloquent.cson)
 
-Tab completion: `hasmany` + tab
-
-Source Code:
+Shortcut: `hasmany` + <kbd>tab</kbd>
 
 ```
 public function $1()
@@ -155,13 +166,14 @@ public function $1()
 }
 ```
 
+
+<hr />
+
 ### &quot;Belongs To&quot; Relationship
 
 File: [eloquent.cson](../snippets/eloquent.cson)
 
-Tab completion: `belongsto` + tab
-
-Source Code:
+Shortcut: `belongsto` + <kbd>tab</kbd>
 
 ```
 public function $1()
@@ -170,13 +182,14 @@ public function $1()
 }
 ```
 
+
+<hr />
+
 ### &quot;Belongs To Many&quot; Relationship
 
 File: [eloquent.cson](../snippets/eloquent.cson)
 
-Tab completion: `btm` + tab
-
-Source Code:
+Shortcut: `btm` + <kbd>tab</kbd>
 
 ```
 public function $1()
@@ -185,13 +198,14 @@ public function $1()
 }
 ```
 
+
+<hr />
+
 ### &quot;Has Many Through&quot; Relationship
 
 File: [eloquent.cson](../snippets/eloquent.cson)
 
-Tab completion: `hasmanythrough` + tab
-
-Source Code:
+Shortcut: `hasmanythrough` + <kbd>tab</kbd>
 
 ```
 public function $1()
@@ -200,13 +214,14 @@ public function $1()
 }
 ```
 
+
+<hr />
+
 ### Polymorphism: Morph To
 
 File: [eloquent.cson](../snippets/eloquent.cson)
 
-Tab completion: `morphto` + tab
-
-Source Code:
+Shortcut: `morphto` + <kbd>tab</kbd>
 
 ```
 public function $1()
@@ -215,13 +230,14 @@ public function $1()
 }
 ```
 
+
+<hr />
+
 ### Polymorphism: Morph Many
 
 File: [eloquent.cson](../snippets/eloquent.cson)
 
-Tab completion: `morph` + tab
-
-Source Code:
+Shortcut: `morph` + <kbd>tab</kbd>
 
 ```
 public function $1()
@@ -229,14 +245,15 @@ public function $1()
     return $this->morphMany($2::class, '${3:commentable}');
 }
 ```
+
+
+<hr />
 
 ### Polymorphism: Morph Many (Long Prefix)
 
 File: [eloquent.cson](../snippets/eloquent.cson)
 
-Tab completion: `morphmany` + tab
-
-Source Code:
+Shortcut: `morphmany` + <kbd>tab</kbd>
 
 ```
 public function $1()
@@ -245,13 +262,14 @@ public function $1()
 }
 ```
 
+
+<hr />
+
 ### Ascii Logo
 
 File: [fun.cson](../snippets/fun.cson)
 
-Tab completion: `laravel:logo` + tab
-
-Source Code:
+Shortcut: `laravel:logo` + <kbd>tab</kbd>
 
 ```
 :/:::::::+.
@@ -269,51 +287,55 @@ Source Code:
                       `/++/:-.
 ```
 
+
+<hr />
+
 ### Key/Value Pairs
 
 File: [php.cson](../snippets/php.cson)
 
-Tab completion: `kv` + tab
-
-Source Code:
+Shortcut: `kv` + <kbd>tab</kbd>
 
 ```
 '$1' => ${2:'$3'},$0
 ```
 
+
+<hr />
+
 ### The $this Keyword
 
 File: [php.cson](../snippets/php.cson)
 
-Tab completion: `this` + tab
-
-Source Code:
+Shortcut: `this` + <kbd>tab</kbd>
 
 ```
 $this
 ```
 
+
+<hr />
+
 ### DocBlock Comment Shorter Expansion
 
 File: [php.cson](../snippets/php.cson)
 
-Tab completion: `/` + tab
-
-Source Code:
+Shortcut: `/` + <kbd>tab</kbd>
 
 ```
 /**
  * $1
  */
 ```
+
+
+<hr />
 
 ### DocBlock Comment
 
 File: [php.cson](../snippets/php.cson)
 
-Tab completion: `/**` + tab
-
-Source Code:
+Shortcut: `/**` + <kbd>tab</kbd>
 
 ```
 /**
@@ -321,25 +343,27 @@ Source Code:
  */
 ```
 
+
+<hr />
+
 ### Route
 
 File: [routes.cson](../snippets/routes.cson)
 
-Tab completion: `route` + tab
-
-Source Code:
+Shortcut: `route` + <kbd>tab</kbd>
 
 ```
 Route::$1('$2', '$3Controller@$4');
 ```
 
+
+<hr />
+
 ### Route Group
 
 File: [routes.cson](../snippets/routes.cson)
 
-Tab completion: `route:group` + tab
-
-Source Code:
+Shortcut: `route:group` + <kbd>tab</kbd>
 
 ```
 Route::group([
@@ -349,13 +373,14 @@ Route::group([
 });
 ```
 
+
+<hr />
+
 ### Laravel Test Case
 
 File: [tests.cson](../snippets/tests.cson)
 
-Tab completion: `testcase2` + tab
-
-Source Code:
+Shortcut: `testcase2` + <kbd>tab</kbd>
 
 ```
 use Illuminate\Foundation\Testing\WithoutMiddleware;
@@ -368,13 +393,14 @@ class $1Test extends TestCase
 }
 ```
 
+
+<hr />
+
 ### PHP Unit Test
 
 File: [tests.cson](../snippets/tests.cson)
 
-Tab completion: `test` + tab
-
-Source Code:
+Shortcut: `test` + <kbd>tab</kbd>
 
 ```
 /** @test */
