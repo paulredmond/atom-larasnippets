@@ -6,7 +6,7 @@
         'body': """
             public function $1()
             {
-                return $this->hasOne($2::class)
+                return $this->hasOne($2::class);
             }
         """
 
@@ -16,7 +16,7 @@
         'body': """
             public function $1()
             {
-                return $this->hasMany($2::class)
+                return $this->hasMany($2::class);
             }
         """
 
@@ -26,7 +26,7 @@
         'body': """
             public function $1()
             {
-                return $this->belongsTo($2::class)
+                return $this->belongsTo($2::class);
             }
         """
     # Has and Belongs to Many
@@ -35,6 +35,46 @@
         'body': """
             public function $1()
             {
-                return $this->belongsToMany($2::class)
+                return $this->belongsToMany($2::class);
+            }
+        """
+
+    # Has Many Through
+    '"Has Many Through" Relationship':
+        'prefix': 'hasmanythrough'
+        'body': """
+            public function $1()
+            {
+                return $this->hasManyThrough($2::class, $3::class);
+            }
+        """
+
+    # Morph To
+    'Polymorphism: Morph To':
+        'prefix': 'morphto'
+        'body': """
+            public function $1()
+            {
+                return $this->morphTo();
+            }
+        """
+
+    # Morph Many
+    'Polymorphism: Morph Many':
+        'prefix': 'morph'
+        'body': """
+            public function $1()
+            {
+                return $this->morphMany($2::class, '${3:commentable}');
+            }
+        """
+
+    # Provides another prefix to catch both `morph` and `morphmany`
+    'Polymorphism: Morph Many (Long Prefix)':
+        'prefix': 'morphmany'
+        'body': """
+            public function $1()
+            {
+                return $this->morphMany($2::class, '${3:commentable}');
             }
         """

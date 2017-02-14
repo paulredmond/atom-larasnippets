@@ -10,3 +10,19 @@
     'The $this Keyword':
         'prefix': 'this'
         'body': '\$this'
+
+    # DocBlock Comment
+    'DocBlock Comment Shorter Expansion':
+        'prefix': '/'
+        'body': """
+            /**
+             * $1
+             */
+        """
+    'DocBlock Comment':
+        'prefix': '/**'
+        'body': """
+            /**
+             * $1
+             */
+        """
