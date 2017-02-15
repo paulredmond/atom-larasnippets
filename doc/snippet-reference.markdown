@@ -428,4 +428,17 @@ function $1()
 
 <hr />
 
+### Shebang
+
+File: [util.cson](../snippets/util.cson)
+
+Shortcut: `#!` + <kbd>tab</kbd>
+
+```
+#!/usr/bin/env ${1:bash}$0
+```
+
+
+<hr />
+
 To regenerate this document run: `node docs.js`.
