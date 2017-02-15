@@ -2,8 +2,14 @@
 
 TYPE=${1:-minor}
 
-npm run docs \
-&& npm version $TYPE \
+npm run docs
+
+# Commit documenation changes if they exist
+if ! git diff-index --quiet HEAD --; then
+    git commit -am"Update documentation"
+fi
+
+npm version $TYPE \
 && git push --tags origin master \
 && VERSION=$(cat package.json \
   | grep version \
