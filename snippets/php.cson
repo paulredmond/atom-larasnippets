@@ -19,10 +19,21 @@
              * $1
              */
         """
+
+    # Another variant of the DocBlock comment
     'DocBlock Comment':
         'prefix': '/**'
         'body': """
             /**
              * $1
              */
+        """
+
+    # Anonymous function
+    'PHP Anonymous Function':
+        'prefix': 'func'
+        'body': """
+            function ($1) {
+                $2
+            }
         """
