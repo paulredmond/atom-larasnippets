@@ -428,6 +428,19 @@ function $1()
 
 <hr />
 
+### Shebang (Longer Shortcut)
+
+File: [util.cson](../snippets/util.cson)
+
+Shortcut: `shebang` + <kbd>tab</kbd>
+
+```
+#!/usr/bin/env ${1:bash}$0
+```
+
+
+<hr />
+
 ### Shebang
 
 File: [util.cson](../snippets/util.cson)
