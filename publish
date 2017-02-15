@@ -5,7 +5,9 @@ TYPE=${1:-minor}
 npm run docs
 
 # Commit documenation changes if they exist
+# @see http://stackoverflow.com/a/5143914/599230
 if ! git diff-index --quiet HEAD --; then
+    echo "The documentation has changes..."
     git commit -am"Update documentation"
 fi
 
