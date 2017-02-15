@@ -346,6 +346,21 @@ Shortcut: `/**` + <kbd>tab</kbd>
 
 <hr />
 
+### PHP Anonymous Function
+
+File: [php.cson](../snippets/php.cson)
+
+Shortcut: `func` + <kbd>tab</kbd>
+
+```php
+function ($1) {
+    $2
+}
+```
+
+
+<hr />
+
 ### Route
 
 File: [routes.cson](../snippets/routes.cson)
