@@ -361,6 +361,51 @@ function ($1) {
 
 <hr />
 
+### PHP Public Function Based on PhpStorm
+
+File: [php.cson](../snippets/php.cson)
+
+Shortcut: `pubf` + <kbd>tab</kbd>
+
+```php
+public function $1($2) {
+    $0
+}
+```
+
+
+<hr />
+
+### PHP Protected Function Based on PhpStorm
+
+File: [php.cson](../snippets/php.cson)
+
+Shortcut: `prof` + <kbd>tab</kbd>
+
+```php
+protected function $1($2) {
+    $0
+}
+```
+
+
+<hr />
+
+### PHP Private Function Based on PhpStorm
+
+File: [php.cson](../snippets/php.cson)
+
+Shortcut: `prif` + <kbd>tab</kbd>
+
+```php
+private function $1($2) {
+    $0
+}
+```
+
+
+<hr />
+
 ### Route
 
 File: [routes.cson](../snippets/routes.cson)
