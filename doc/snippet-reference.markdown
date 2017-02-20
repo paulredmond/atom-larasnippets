@@ -368,7 +368,8 @@ File: [php.cson](../snippets/php.cson)
 Shortcut: `pubf` + <kbd>tab</kbd>
 
 ```php
-public function $1($2) {
+public function $1($2)
+{
     $0
 }
 ```
@@ -383,7 +384,8 @@ File: [php.cson](../snippets/php.cson)
 Shortcut: `prof` + <kbd>tab</kbd>
 
 ```php
-protected function $1($2) {
+protected function $1($2)
+{
     $0
 }
 ```
@@ -398,7 +400,8 @@ File: [php.cson](../snippets/php.cson)
 Shortcut: `prif` + <kbd>tab</kbd>
 
 ```php
-private function $1($2) {
+private function $1($2)
+{
     $0
 }
 ```
