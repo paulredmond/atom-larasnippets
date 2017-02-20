@@ -61,3 +61,9 @@
             $0
         }
       """
+
+    'PHP Public Function for an interface':
+      'prefix': 'ipubf'
+      'body': """
+        public function $1($2);
+      """
