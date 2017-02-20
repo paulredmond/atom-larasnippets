@@ -37,3 +37,27 @@
                 $2
             }
         """
+
+    'PHP Public Function Based on PhpStorm':
+      'prefix': 'pubf'
+      'body': """
+        public function $1($2) {
+            $0
+        }
+      """
+
+    'PHP Protected Function Based on PhpStorm':
+      'prefix': 'prof'
+      'body': """
+        protected function $1($2) {
+            $0
+        }
+      """
+
+    'PHP Private Function Based on PhpStorm':
+      'prefix': 'prif'
+      'body': """
+        private function $1($2) {
+            $0
+        }
+      """
