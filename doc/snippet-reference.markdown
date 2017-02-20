@@ -406,6 +406,19 @@ private function $1($2) {
 
 <hr />
 
+### PHP Public Function for an interface
+
+File: [php.cson](../snippets/php.cson)
+
+Shortcut: `ipubf` + <kbd>tab</kbd>
+
+```php
+public function $1($2);
+```
+
+
+<hr />
+
 ### Route
 
 File: [routes.cson](../snippets/routes.cson)
