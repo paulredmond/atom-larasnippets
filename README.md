@@ -14,12 +14,15 @@ My collection of Laravel and PHP Snippets. The goal of this package isn't an exh
 
 ## Deploy
 
-Note, this is only for my reference. Nobody else can deploy this.
+1. Update the [changelog](./CHANGELOG.md).
+1. Run the documentation update `npm run docs`
+1. Run the deploy script
 ```
 ./publish
 ./publish major
 ./publish patch
 ```
+_* Note, this is only for my reference. Nobody else can deploy this._
 
 ## Documentation
 
