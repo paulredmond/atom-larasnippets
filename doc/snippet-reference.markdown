@@ -459,13 +459,16 @@ File: [tests.cson](../snippets/tests.cson)
 Shortcut: `testcase` + <kbd>tab</kbd>
 
 ```php
+namespace Tests\$1;
+
+use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
-class $1Test extends TestCase
+class $2Test extends TestCase
 {
-    $2
+    $3
 }
 ```
 
