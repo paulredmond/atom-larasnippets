@@ -1,5 +1,18 @@
 '.source.php':
 
+    'Create a model':
+        'prefix': 'model',
+        'body': """
+            namespace App;
+
+            use Illuminate\Database\Eloquent\Model;
+
+            class $1 extends Model
+            {
+                protected $guarded = [];
+            }
+        """
+
     # Has one
     '"Has One" Relationship':
         'prefix': 'hasone'
