@@ -137,6 +137,26 @@ $factory->state(App\$1::class, '${2:state}', function (Faker\Generator $faker) {
 
 <hr />
 
+### Create a model
+
+File: [eloquent.cson](../snippets/eloquent.cson)
+
+Shortcut: `model` + <kbd>tab</kbd>
+
+```php
+namespace App;
+
+use IlluminateDatabaseEloquentModel;
+
+class $1 extends Model
+{
+    protected $guarded = [];
+}
+```
+
+
+<hr />
+
 ### &quot;Has One&quot; Relationship
 
 File: [eloquent.cson](../snippets/eloquent.cson)
